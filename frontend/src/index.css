@@ -1,0 +1,37 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 font-sans antialiased;
+  }
+}
+
+@layer components {
+  /* PERBAIKAN: Menggunakan sintaks opacity v4 (color/value) */
+  .btn-primary {
+    @apply bg-mint text-slate-900 px-6 py-2 rounded-xl font-bold 
+           hover:bg-mint/90 transition-all active:scale-95 shadow-md;
+  }
+  
+  .card-pos {
+    @apply bg-white p-4 rounded-2xl border border-slate-100 
+           shadow-sm hover:shadow-md transition-all duration-300;
+  }
+
+  .input-pos {
+    @apply block w-full pl-10 pr-4 py-2.5 bg-white border border-slate-200 
+           rounded-xl focus:ring-2 focus:ring-mint focus:border-transparent 
+           outline-none transition-all shadow-sm placeholder:text-slate-400;
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.animate-blink {
+  animation: blink 1s infinite;
+}
