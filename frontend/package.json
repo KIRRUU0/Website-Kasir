@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "@headlessui/react": "^2.2.9",
+    "@heroicons/react": "^2.2.0",
+    "axios": "^1.13.6",
+    "bootstrap-icons": "^1.13.1",
+    "date-fns": "^4.1.0",
+    "idb": "^8.0.3",
+    "react-hot-toast": "^2.6.0",
+    "react-router-dom": "^7.13.1",
+    "socket.io-client": "^4.8.3",
+    "zustand": "^5.0.12"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "tailwindcss": "^4.2.2"
+  }
+}
